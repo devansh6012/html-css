@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. COMBINATORS */
+
+        /* This is called spacing COMBINATOR. It will find all the p elements inside common and apply css to it */
+        .common p {
+            color: lightcoral;
+        }
+
+        /* This is "immediate" combinator (>). It apply css to that p which is immediate child */
+        .common > p {
+            background-color: aliceblue;
+        }
+
+        /* This is "immediate sibling" combinator (+). It applies css to elements which are together and no other element is between them */
+        .common + div {
+            background-color: aquamarine;
+        }
+        
+        /* This is "general sibling" combinator (~). It applies css to elements which are on same level. Not checking if immediate or not */
+        .sib1 ~ div {
+            background-color: lightslategray
+        }
+
+        /* 2. ATTRIBUTES */
+
+        label[for] {
+            color: green;
+        }
+
+        label[for="name"] {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 1. COMBINATORS -->
+    <div class="common common2">
+        Hi
+        <div class="something1">Something</div>
+        <div class="something2">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, provident.
+            </p>
+        </div>
+        <div class="something3"></div>
+        <p>Hello</p>
+    </div>
+
+    <div class="sib">I'm Sibling</div>
+
+    <!-- Checking general sibling (~) -->
+    <div>
+        <div class="sib1">I'm Sibling 1</div>
+
+        <p>Coming between siblings</p>
+        <p>Coming between siblings</p>
+
+        <div>I'm Sibling 2</div>
+    </div>
+
+
+    <!-- 2. ATTRIBUTES -->
+
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        
+        <label for="password">Password</label>
+        <input type="password" id="password">
+    </form>
+
+</body>
+</html>

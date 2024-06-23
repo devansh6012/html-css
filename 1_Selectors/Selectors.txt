@@ -1,0 +1,9 @@
+1. Simple Selectors : div, p, a, name (tag), form, input...
+
+2. Combinators: 
+        (i) Space " "
+        (ii) > Immediate Child
+        (iii) + Immediate Sibling
+        (iv) ~ general Sibling
+
+3. Attributes: input type, class, id, for, name, value, href...
