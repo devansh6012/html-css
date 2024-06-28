@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            background-color: lightblue;
+        }
+
+        .inline-1 {
+            background-color: lightgreen;
+        }
+
+        .inline-2 {
+            background-color: lightpink;
+            height: 10rem; /* This does not affect */
+            width: 5rem; /* This does not affect */
+        }
+
+        .inline-block {
+            background-color: lightsalmon;
+            display: inline-block;
+            height: 10rem;
+            width: 15rem;
+        }
+
+        .block-1 {
+            background-color: lightcyan;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">I am block level element 1</div>
+    <span class="inline-1">I am an inline element 1</span>
+    <span class="inline-2">I am an inline element 2</span>
+    <div class="block">I am block level element 2</div>
+    <span class="inline-block">I am an inline element 3</span>
+    <div class="block-1">I am block level element with diplay property: inline</div>
+</body>
+</html>

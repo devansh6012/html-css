@@ -1,0 +1,14 @@
+1. Block
+2. Inline
+3. Inline-Block
+
+
+Block -> div, h1, h2, p...
+         Full Space occupy (start from new line and at its end would be a new line)
+         If you give width to it, then also next elements will start from new line
+
+Inline -> span, a, img...
+          occupy only required space
+          No effect of width and height
+
+Inline-Block -> Same as inline but can apply width and height

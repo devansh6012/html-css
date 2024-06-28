@@ -1,0 +1,23 @@
+1. Static
+         - Natural flow of document
+
+2. Relative
+         - top, left, bottom, right
+         - Element is positional, natural flow remains(document)
+
+3. Absolute
+         - top, left, bottom, right
+         - Element is positional, natural flow DOESN'T remains(document)
+
+4. Fixed
+         - top, left, bottom, right
+         - Element is positional, natural flow DOESN'T remains(document)
+         - When scrolling can still see the element at that position, element doesn't scroll
+
+5. Sticky
+         - Hybrid of Relative and Fixed
+         - top, left, bottom, right
+         - Element is positional, natural flow remains(document) (Relative property)
+         - element doesn't scroll (Fixed property)
+         - works only within sticky container (parent)
+         - stays only within container

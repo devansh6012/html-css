@@ -1,0 +1,27 @@
+Flexbox
+     - Space Distibution
+     - Alignment
+     - Responsive
+
+Display: flex (Makes flex container and the items inside this container are called flex items)
+
+Axis
+    -> Main Axis -> Flex Direction
+    -> Cross Axis -> Perpendicular to Main Axis
+
+Flex Container Properties
+    1. Flex Direction 
+        -> added on flex container
+        -> By default row Direction
+
+    2. Alignment & Justification
+        -> Justify content -> main axis
+        -> Align Items -> Cross axis
+        -> Align content -> Similar to align items (cross axis). Space between or around items
+
+Flex Items Properties
+    1. Flex grow 
+        -> Try to consume left over space equally in that container
+    
+    2. Flex shrink
+        -> It will shrink items to the defined container
